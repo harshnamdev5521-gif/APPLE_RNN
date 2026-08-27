@@ -6,4 +6,3 @@ requests
 matplotlib
 scikit-learn
 yfinance
-ALPHAVANTAGE_API_KEY = "8MDAU8GFRVWCC76P"
