@@ -226,12 +226,7 @@ page = st.sidebar.radio(
     ],
 )
 
-api_key = st.sidebar.text_input(
-    "Alpha Vantage API Key",
-    value=os.getenv("ALPHAVANTAGE_API_KEY", ""),
-    type="password",
-    help="Enter your Alpha Vantage API key. It is used only to retrieve AAPL daily data."
-)
+api_key = st.secrets["ALPHAVANTAGE_API_KEY"]
 
 st.sidebar.markdown("---")
 st.sidebar.info(
